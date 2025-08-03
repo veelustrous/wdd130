@@ -156,3 +156,38 @@ footer .socialmedia img {
   width: 24px;
 }
 
+.contact-info {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.team {
+  text-align: center;
+  padding: 2rem;
+  background-color: #e6f2ff;
+}
+
+.team figure {
+  display: inline-block;
+  margin: 1rem;
+  width: 200px;
+}
+
+.team img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.team figcaption {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
