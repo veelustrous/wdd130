@@ -141,18 +141,19 @@ main h2 {
 .adventure-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
-  padding: 2rem;
+  gap: 20px;
+  padding: 20px;
 }
+
+.adventure-gallery figure {
+  text-align: center;
+}
+
 .adventure-gallery img {
   width: 100%;
-  border-radius: 6px;
+  border-radius: 5px;
 }
-.adventure-gallery figcaption {
-  text-align: center;
-  font-size: 0.9rem;
-  margin-top: 5px;
-}
+
 
 /* ✅ FOOTER FLEX */
 footer {
@@ -249,4 +250,153 @@ footer .socialmedia img {
   .contact-container {
     grid-template-columns: 1fr;
   }
+}
+/* Trips Page Styles */
+.trips-title {
+  text-align: center;
+  padding: 1rem 0;
+  color: var(--accent1-color);
+}
+
+.trips-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.6;
+}
+
+.trip-summary {
+  padding: 2rem;
+  background-color: #f8f8f8;
+  margin: 2rem auto;
+  max-width: 900px;
+  border-radius: 8px;
+}
+
+.trip-summary h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--accent1-color);
+}
+
+/* Table Styling */
+.trip-summary table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.trip-summary th,
+.trip-summary td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+}
+
+.trip-summary th {
+  background-color: var(--secondary-color);
+  color: white;
+  font-weight: bold;
+}
+
+.trip-summary tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.trips-cta {
+  text-align: center;
+  padding: 2rem;
+}
+
+.trips-cta h2 {
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: var(--accent2-color);
+  color: white;
+}
+/* =========================
+   Trips Page Styling
+   ========================= */
+
+/* Page Title & Intro */
+.trips-title {
+  text-align: center;
+  margin: 2rem 0 1rem;
+  color: var(--accent1-color);
+  font-family: var(--heading-font);
+}
+
+.trips-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  color: var(--accent1-color);
+}
+
+/* Trip Summary Table */
+.trip-summary {
+  padding: 2rem;
+}
+
+.trip-summary h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--accent1-color);
+}
+
+.trip-summary table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: auto;
+  max-width: 900px;
+}
+
+.trip-summary th,
+.trip-summary td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.trip-summary th {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.trip-summary tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+/* Call to Action */
+.trips-cta {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--accent1-color);
+  color: #fff;
+}
+
+.trips-cta .btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.trips-cta .btn:hover {
+  background-color: var(--accent2-color);
+  color: #fff;
 }
